@@ -8,9 +8,8 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.tyagi.EcommerceBackend.model.*;
-
-@Repository("userDAO")
+import com.tyagi.EcommerceBackend.model.UserRegister;
+@Repository("UserDAO")
 public class UserDAO 
 {
 @Autowired
@@ -42,7 +41,7 @@ public void deleteUser(UserRegister user)
 public List<UserRegister> getUserDetails()
 {
 	Session session=sessionFactory.openSession();
-	Query query=session.createQuery("from User");
+	Query query=session.createQuery("from UserRegister");
 	List<UserRegister> list=query.list();
 	session.close();
 	return list;
@@ -50,4 +49,3 @@ public List<UserRegister> getUserDetails()
 
 
 }
-

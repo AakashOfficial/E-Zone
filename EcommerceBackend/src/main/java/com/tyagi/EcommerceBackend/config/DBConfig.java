@@ -117,4 +117,5 @@ public class DBConfig
 		System.out.println("-- CartDAO Object Creation--");
 		return new CartDAO(sessionFactory);
 	}
+	
 }

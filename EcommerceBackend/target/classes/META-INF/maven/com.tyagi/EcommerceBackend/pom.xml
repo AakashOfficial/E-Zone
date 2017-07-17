@@ -22,7 +22,7 @@
       <scope>test</scope>
     </dependency>
     
-    <dependency>
+        <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>4.3.5.RELEASE</version>
@@ -33,24 +33,24 @@
 			<artifactId>spring-orm</artifactId>
 			<version>4.3.5.RELEASE</version>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.3.5.RELEASE</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>4.3.5.Final</version>
 		</dependency>
 		
-		<dependency>
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+        <dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<version>1.4.192</version>
+			<version>1.4.195</version>
 		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-        <dependency>
-             <groupId>org.springframework</groupId>
-             <artifactId>spring-web</artifactId>
-             <version>3.0.4.RELEASE</version>
-        </dependency>
   </dependencies>
 </project>

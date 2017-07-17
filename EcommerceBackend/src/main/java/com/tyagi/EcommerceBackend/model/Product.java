@@ -1,33 +1,32 @@
 package com.tyagi.EcommerceBackend.model;
 
-import java.io.Serializable;
-
-import org.springframework.web.multipart.MultipartFile;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
-import org.hibernate.annotations.BatchSize;
+
+import org.springframework.web.multipart.MultipartFile;
 
 @Entity
 @Table
-public class Product<MultipartFile> implements Serializable {
-
+public class Product {
 	@Id
-    @GeneratedValue
-    int prodid;
+	@GeneratedValue
+	int prodid;
+	int catid, suppid, quantity, price;
+	String prodname;
+	String proddesc;
+	@Transient
+	MultipartFile pimage;
 
+	public MultipartFile getPimage() {
+		return pimage;
+	}
 
-    String prodname;
-    int catid;
-    int suppid;
-    int quantity;
-    int price;
-    String proddesc;
-
-    @Transient
-    MultipartFile pimage;
+	public void setPimage(MultipartFile pimage) {
+		this.pimage = pimage;
+	}
 
 	public int getProdid() {
 		return prodid;
@@ -35,14 +34,6 @@ public class Product<MultipartFile> implements Serializable {
 
 	public void setProdid(int prodid) {
 		this.prodid = prodid;
-	}
-
-	public String getProdname() {
-		return prodname;
-	}
-
-	public void setProdname(String prodname) {
-		this.prodname = prodname;
 	}
 
 	public int getCatid() {
@@ -77,6 +68,14 @@ public class Product<MultipartFile> implements Serializable {
 		this.price = price;
 	}
 
+	public String getProdname() {
+		return prodname;
+	}
+
+	public void setProdname(String prodname) {
+		this.prodname = prodname;
+	}
+
 	public String getProddesc() {
 		return proddesc;
 	}
@@ -84,14 +83,4 @@ public class Product<MultipartFile> implements Serializable {
 	public void setProddesc(String proddesc) {
 		this.proddesc = proddesc;
 	}
-
-	public MultipartFile getPimage() {
-		return pimage;
-	}
-
-	public void setPimage(MultipartFile pimage) {
-		this.pimage = pimage;
-	}
-	
 }
-
