@@ -2,14 +2,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<%@include file="Header.jsp"%>
+<%@include file="HeaderUser.jsp"%>
 <table width="60%" align="center" border="1">
 
 <tr bgcolor="skyblue">
 <td colsop="3"><center>Product Description</center></td>
 </tr>
 <tr>
-<td rowspan="6"><img src="<c:url value="/resources/images/${prodinfo.prodid}.jpg"/>"/></td>
+<td rowspan="6"><img src="<c:url value="/resources/${prodinfo.prodid}.jpg"/>"/></td>
 </tr>
 <tr>
 <td>Product ID</td><td>${prodinfo.prodid}</td>

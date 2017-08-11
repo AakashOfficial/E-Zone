@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html"%>
+<%-- <%@ page language="java" contentType="text/html"%> --%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@include file="Header.jsp"%>
+<%@include file="HeaderUser.jsp"%>
 
 <html>
 <body>

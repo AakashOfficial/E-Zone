@@ -72,7 +72,7 @@
                 <div class="col-md-4">
                     <h3> Login </h3>
                     <ul>
-                        <li> <a href="Login"> Admin Login </a> </li>
+                        <li> <a href="login"> Admin Login </a> </li>
                         <li> <a href="login"> User Login </a> </li>
                     </ul>
                 </div>

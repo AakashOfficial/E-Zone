@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<%@include file="Header.jsp"%>
+<%@include file="HeaderUser.jsp"%>
 <html>
 <body>
 
@@ -12,7 +12,7 @@
 <div class="row">
 <div class="col-sm-6 col-md-3">
 <div class="caption">
-<h4><a href="ProductDesc/${category.catid}" >${category.catname}</a></h4>
+<h4><a href="ProductDescribe/${category.catid}" >${category.catname}</a></h4>
 
 <p>${category.catdesc}</p>
 

@@ -76,7 +76,7 @@ footer {
                         <li><a href="AboutUs">About Us</a></li>
                         <li><a href="ContactUs">Contact Us</a></li>
                         <li><a href="ProductPage">Show Product</a></li>
-                        <li><a href="CategoryPage">Show Category</a></li>
+                        <li><a href="Register">Register Here</a></li>
                         <li><a href="login">Login</a></li>
                         
                     </ul>

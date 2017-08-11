@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Login</title>
+  <title>EZONE Home</title>
   <style type="text/css">
   body { padding-top: 20px; }
 #myCarousel .nav a small {
