@@ -174,7 +174,7 @@ span.input-group-addon i {
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="enabled" id="enabled"  placeholder="Enter First Name"/>
+									<input type="text" class="form-control" name="enabled" id="enabled"  placeholder="Enter Status"/>
 								</div>
 							</div>
 						</div>

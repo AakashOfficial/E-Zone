@@ -20,10 +20,10 @@
 <td><input type="text" value="${cartitem.quantity}" name="quantity" required/> </td>
 
 <td>${cartitem.price*cartitem.quantity}</td>
-<td><img src="<c:url value='/resources/${cartitem.prodid }.jpg'/> width="100" height="100">/></td>
+<td><img src="<c:url value="/resources/${prodinfo.prodid}.jpg"/> width="100" height="100">/></td>
 <td>
 <input type="submit" value="UPDATE" class="btn-success btn-block"/>
-<%-- <a href="<c:url value="/deleteCartItem/${cartitem.citemid}"/>" method="get">DELETE</a> --%>
+<a href="<c:url value="/deleteCartItem/${cartitem.citemid}"/>" method="get">DELETE</a>
 </td>
 </form>
 </tr>

@@ -84,7 +84,7 @@
                         
                         <li> <a href="login"> Administration </a> </li>
                        
-                        <li> <a href="ProductDesc"> Products </a> </li>
+                        <li> <a href="ProductPage"> Products </a> </li>
                         
                     </ul>
                 </div>

@@ -9,13 +9,19 @@ public class PagesController
 	@RequestMapping("/AboutUs")
 	public String showAboutUs()
 	{
-		return "ContactUs";
+		return "AboutUs";
 	}
-	
+		
 	@RequestMapping("/HeaderUser")
 	public String showHeaderUser()
 	{
 		return "HeaderUser";
+	}
+	
+	@RequestMapping("/HeaderAdmin")
+	public String showHeaderAdmin()
+	{
+		return "HeaderAdmin";
 	}
 	
 	@RequestMapping("/AfterFeedback")
@@ -34,6 +40,12 @@ public class PagesController
 	public String showContact()
 	{
 		return "ContactUs";
+	}
+	
+	@RequestMapping("/ContactUst")
+	public String showContactt()
+	{
+		return "ContactUst";
 	}
 	
 	@RequestMapping("/ProductDesc")
