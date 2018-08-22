@@ -2,10 +2,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-<%@include file="HeaderUser.jsp"%>
 <html>
 <body>
-
+<%@include file="HeaderUser.jsp"%>
+  
 <div id="container">
 
 <c:forEach items="${catdetail}" var="category">
