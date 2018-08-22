@@ -2,12 +2,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@include file="Header.jsp"%>
-
 <html>
 <body>
-
 <div id="container">
-
 <c:forEach items="${prodlist}" var="product">
 <div class="row">
 <div class="col-sm-6 col-md-3">
