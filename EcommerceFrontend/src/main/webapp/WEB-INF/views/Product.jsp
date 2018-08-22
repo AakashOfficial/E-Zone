@@ -7,10 +7,10 @@
 
 <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <%@include file="HeaderAdmin.jsp" %>
 </head>
 <body>
-
+<%@include file="HeaderAdmin.jsp" %>
+	
 <form:form method="POST" action="InsertProduct" modelAttribute="product" enctype="multipart/form-data">
 <table align="center">
 			<tr>
@@ -85,9 +85,6 @@
 		</tr>
 	</c:forEach>
 </table>
-
- 
-
 
 <!-- Completed Displaying Table -->
  <%@include file="Footer.jsp" %>
