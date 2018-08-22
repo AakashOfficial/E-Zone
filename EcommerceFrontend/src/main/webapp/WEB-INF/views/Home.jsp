@@ -144,9 +144,7 @@
 </head>
 <body>
 <%@include file="Header.jsp"%>
-
-
-
+	
   <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
