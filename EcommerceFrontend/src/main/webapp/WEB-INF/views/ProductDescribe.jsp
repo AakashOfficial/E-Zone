@@ -4,7 +4,6 @@
 
 <%@include file="HeaderUser.jsp"%>
 <table width="60%" align="center" border="1">
-
 <tr bgcolor="skyblue">
 <td colsop="3"><center>Product Description</center></td>
 </tr>
@@ -32,7 +31,6 @@
 <form action="<c:url value="/addToCart/${prodinfo.prodid}"/>" method="get">
 Quantity <input type="text" name="quantity" class="form-control btn-block"/>
 <input type="submit" value="AddToCart" class="btn btn-xs btn-success btn-block"/>
-
 </form>
 </tr>
 </table>
