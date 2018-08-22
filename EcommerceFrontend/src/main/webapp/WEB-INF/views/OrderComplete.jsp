@@ -1,8 +1,7 @@
 <html>
 <head>
    <title>Order Complete</title>
-</head>
-   
+</head>  
 <body>
 	<div class="container" style="margin-top:10%;margin-left:15%;margin-right:15%;">
 	<div class="row">
