@@ -4,7 +4,6 @@
 
 <%@include file="Header.jsp"%>
 <table width="60%" align="center" border="1">
-
 <tr bgcolor="skyblue">
 <td colsop="3"><center>Product Description</center></td>
 </tr>
