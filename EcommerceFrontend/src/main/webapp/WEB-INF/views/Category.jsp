@@ -2,10 +2,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <%@include file="HeaderAdmin.jsp" %>
 </head>
 <body>
 
+	<%@include file="HeaderAdmin.jsp" %>
 <!-- Category Form Started -->
 <div>
 <c:if test="${flag}">
