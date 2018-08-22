@@ -4,7 +4,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
     <title>Login Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -123,7 +122,6 @@ span.input-group-addon i {
 	</style>
 	<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-    <title>Login</title>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>   
