@@ -17,5 +17,6 @@
 		</tr>
 	</c:forEach>
 </table>
+
 <!-- Completed Displaying Table -->
 <%@include file="Footer.jsp" %>
