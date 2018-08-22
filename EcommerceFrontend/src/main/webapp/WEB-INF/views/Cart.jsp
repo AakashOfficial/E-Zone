@@ -34,7 +34,6 @@
 <td><a href="<c:url value="/checkout"/>">CheckOut</a></td>
 </tr>
 
-
 </table>
  <%@include file="Footer.jsp" %>
 </body>
