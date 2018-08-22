@@ -2,7 +2,6 @@
     pageEncoding="ISO-8859-1"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Contact Us</title>
   <style>
       .jumbotron {
@@ -82,7 +81,7 @@ font-size: 24px;
         </div>
         <div class="col-md-4">
             <form>
-            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+            <legend><span class="glyphicon glyphicon-globe"></span>Â Our office</legend>
             <address>
                 <strong>Tyagi, Inc.</strong><br>
                 795 Anand Vihar, District - Hapur<br>
