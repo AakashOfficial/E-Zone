@@ -18,6 +18,7 @@ public class CategoryDAO{
     public CategoryDAO(SessionFactory sessionFactory){
 	    this.sessionFactory=sessionFactory;
     }
+	
     @Transactional
     public void insertUpdateCategory(Category category){
 	    Session session=sessionFactory.getCurrentSession();
@@ -30,6 +31,7 @@ public class CategoryDAO{
 	    session.close();
 	    return category;
     }
+	
     @Transactional
     public void deleteCategory(Category category){
 	    sessionFactory.getCurrentSession().delete(category);
@@ -44,4 +46,3 @@ public class CategoryDAO{
     }
 
 }
-
