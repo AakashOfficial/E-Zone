@@ -14,15 +14,15 @@ import com.tyagi.EcommerceBackend.model.Cart;
 @Controller
 public class OrderController
 {
-@Autowired
-CartDAO cartDAO;
-@Autowired
-ProductDAO productDAO;
+  @Autowired
+  CartDAO cartDAO;
+  @Autowired
+  ProductDAO productDAO;
 
 
-@RequestMapping("/checkout")
-public String orderConfirm(HttpSession session,Model m)
-{
+  @RequestMapping("/checkout")
+  public String orderConfirm(HttpSession session,Model m)
+  {
 	String username=(String)session.getAttribute("username");
 	List<Cart> list=cartDAO.getCartItems(username);
 	int grandtotal=0;
@@ -33,5 +33,5 @@ public String orderConfirm(HttpSession session,Model m)
 	m.addAttribute("grandtotal",grandtotal);
 	m.addAttribute("cartitems",list);
 	return "OrderConfirm";
-}
+  }
 }
