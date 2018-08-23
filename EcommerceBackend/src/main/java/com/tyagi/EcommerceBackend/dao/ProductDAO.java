@@ -15,10 +15,12 @@ public class ProductDAO
 {
 @Autowired
 SessionFactory sessionFactory;
+	
 public ProductDAO(SessionFactory sessionFactory)
 {
 	this.sessionFactory=sessionFactory;
 }
+	
 @Transactional
 public void insertUpdateProduct(Product product)
 {
@@ -33,6 +35,7 @@ public Product getProduct(int ProdId)
 	session.close();
 	return product;
 }
+	
 @Transactional
 public void deleteProduct(Product product)
 {
@@ -47,6 +50,5 @@ public List<Product> getProductDetails()
 	session.close();
 	return list;
 }
-
 
 }
