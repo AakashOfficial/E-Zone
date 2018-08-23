@@ -18,15 +18,11 @@ public class CategoryTestCase{
 		CategoryDAO categoryDAO = (CategoryDAO) context.getBean("categoryDAO");
 			
 		// insert
-
 		Category category = new Category();
-
 		category.setCatname("Saree");
 		category.setCatdesc("Wear and be Gorgeous");
-
 		categoryDAO.insertUpdateCategory(category);
 		System.out.println("Category Inserted");
-		
 			
 		//Retrieval TestCase
 		/*Category category=categoryDAO.getCategory(2);
@@ -49,8 +45,6 @@ public class CategoryTestCase{
 		category.setCatname("WifiEnMobile");
 		categoryDAO.insertUpdateCategory(category);
 		System.out.println("The Category Updated");*/
-					
-				
-			
+							
 		}
-	}
+}
