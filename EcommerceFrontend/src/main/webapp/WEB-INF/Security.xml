@@ -15,8 +15,7 @@
         http://www.springframework.org/schema/security/spring-security.xsd
         http://www.springframework.org/schema/tx 
         http://www.springframework.org/schema/security/spring-tx-4.2.xsd">
-        
-        
+           
         <security:http auto-config="true" use-expressions="true">
         <security:intercept-url pattern="/UserHome" access="hasRole('Role_USER')"/>
         <security:intercept-url pattern="/AdminHome" access="hasRole('Role_ADMIN')"/>
@@ -37,5 +36,4 @@
 				authorities-by-username-query="select username, role from UserRegister where username =?" />
 		</security:authentication-provider>
 	</security:authentication-manager>
-	</beans:beans> 
-        
+	</beans:beans>    
