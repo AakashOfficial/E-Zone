@@ -7,7 +7,6 @@ import javax.naming.Context;
 import com.tyagi.EcommerceBackend.dao.SupplierDAO;
 import com.tyagi.EcommerceBackend.model.Supplier;
 
-
 public class SupplierTestCase {
 	
 	public static void main(String[] args) {
@@ -16,18 +15,15 @@ public class SupplierTestCase {
 		context.refresh();
 
 	SupplierDAO supplierDAO=(SupplierDAO)context.getBean("supplierDAO");
-
-		
+	
 	Supplier supplier=new Supplier();
-
 	supplier.setSuppname("Aman");
 	supplier.setSuppaddress("Ghaziabad");
 
 	supplierDAO.insertUpdateSupplier(supplier);		
 	System.out.println("Supplier Inserted");
 
-
-	        //Retrieval TestCase
+	                //Retrieval TestCase
 			/*Supplier supplier=supplierDAO.getSupplier(2);
 			System.out.println("Supplier Name:"+supplier.getSuppname());
 			System.out.println("Supplier Description:"+supplier.getSuppaddress());*/
@@ -38,9 +34,7 @@ public class SupplierTestCase {
 			System.out.println("The Supplier Deleted");*/
 			
 			//Retrieving the Data
-			
 			/*List<Supplier> list=supplierDAO.getSupplierDetails();
-			
 			for(Supplier supplier1:list)
 			{
 				System.out.println(supplier1.getSuppid()+":"+supplier1.getSuppname()+":"+supplier1.getSuppaddress());
@@ -51,8 +45,5 @@ public class SupplierTestCase {
 			supplier.setSuppname("X");
 			supplierDAO.insertUpdateSupplier(supplier);
 			System.out.println("The Supplier Updated");*/
-		
 	       }
-
 }
-
