@@ -16,16 +16,12 @@ import com.tyagi.EcommerceBackend.model.Supplier;
 @Controller
 public class SupplierController 
 {
-	
-	
 	@Autowired
 	SupplierDAO supplierDAO;
 	
 	@RequestMapping("/Supplier")
 	public String showSupplier(Model m)
-	{
-		
-		
+	{	
 		Supplier supplier=new Supplier();
 		
 		m.addAttribute("supplist",getSuppList());
@@ -34,12 +30,9 @@ public class SupplierController
 		List<Supplier> supplist=supplierDAO.getSupplierDetails();
 		m.addAttribute("supplist",supplist);
 		
-		
 		return "Supplier";
 	}
 	
-	
-
 	@RequestMapping(value="/InsertSupplier",method=RequestMethod.POST)
 	public String insertSupplier(@ModelAttribute("supplier") Supplier supplier,Model m)
 	{
@@ -55,7 +48,6 @@ public class SupplierController
 	@RequestMapping(value="/updateSupplier/{suppid}")
 	public String updateSupplier(@PathVariable("suppid")int suppid,Model m)
 	{
-		
 		Supplier supplier=supplierDAO.getSupplier(suppid);
 		m.addAttribute("supplier",supplier);
 		
@@ -68,7 +60,6 @@ public class SupplierController
 	@RequestMapping(value="/deleteSupplier/{suppid}")
 	public String deleteSupplier(@PathVariable("suppid")int suppid,Model m)
 	{
-		
 		Supplier supplier=supplierDAO.getSupplier(suppid);
 		supplierDAO.deleteSupplier(supplier);
 		
@@ -90,6 +81,5 @@ public class SupplierController
 			supplist.put(supp.getSuppid(),supp.getSuppaddress());
 		}
 		return supplist;
-	}
-	
+	}	
 }
