@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.LinkedHashMap;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -34,16 +33,14 @@ public class ProductController
 	@RequestMapping("/Product")
 	public String showProduct(Model m)
 	{
-		
-		
+			
 		Product product=new Product();
 		
 		m.addAttribute("catlist",this.getCatList());
 		m.addAttribute("product",product);
 		
 		List<Product> prodlist=productDAO.getProductDetails();
-		m.addAttribute("prodlist",prodlist);
-		
+		m.addAttribute("prodlist",prodlist);		
 		
 		return "Product";
 	}
@@ -67,8 +64,7 @@ public class ProductController
         	bs.write(buff);
         }	
         catch(Exception e){
-        	System.out.println("---------Exception Aa Rahi he---------");
-        	
+        	System.out.println("---------Exception Aa Rahi he---------");    	
         }
         	
         }
@@ -82,8 +78,7 @@ public class ProductController
 		
 		return "Product";
 	}
-	
-	
+		
 	@RequestMapping(value="/updateProduct/{prodid}")
 	public String updateProduct(@PathVariable("prodid")int prodid,Model m)
 	{
@@ -100,7 +95,6 @@ public class ProductController
 	@RequestMapping(value="/deleteProduct/{prodid}")
 	public String deleteProduct(@PathVariable("prodid")int prodid,Model m)
 	{
-		
 		Product product=productDAO.getProduct(prodid);
 		productDAO.deleteProduct(product);
 		
@@ -122,8 +116,7 @@ public class ProductController
 		for(Category cat:list)
 		{
 			catlist.put(cat.getCatid(),cat.getCatname());
-		}
-		
+		}	
 		return catlist;
 	}
 	@RequestMapping(value = "/ProductPage")
@@ -133,6 +126,7 @@ public class ProductController
 
 		return "ProductPage";
 	}
+	
 	@RequestMapping(value = "/ProductDesc/{prodid}")
 	public String showProductDesc(@PathVariable("prodid") int prodid,Model m)
 	{
