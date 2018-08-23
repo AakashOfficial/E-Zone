@@ -1,10 +1,7 @@
 package com.tyagi.EcommerceFrontend.controller;
 
 import java.util.List;
-
-
 import javax.servlet.http.HttpSession;
-
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,8 +14,6 @@ import com.tyagi.EcommerceBackend.dao.CartDAO;
 import com.tyagi.EcommerceBackend.dao.ProductDAO;
 import com.tyagi.EcommerceBackend.model.Cart;
 import com.tyagi.EcommerceBackend.model.Product;
-
-
 
 @Controller
 public class CartController {
