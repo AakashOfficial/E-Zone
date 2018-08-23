@@ -113,7 +113,5 @@ public class PagesController
 	public String showProductdescribe()
 	{
 		return "ProductDescribe";
-	}
-	
+	}	
 }
-
