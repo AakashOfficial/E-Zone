@@ -1,7 +1,6 @@
 package com.tyagi.EcommerceBackend;
 
 import java.util.List;
-
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.tyagi.EcommerceBackend.dao.CartDAO;
@@ -33,8 +32,6 @@ public static void main(String[] args)
 		System.out.println(cart2.getProdname()+";;;");
 		System.out.println(cart2.getPrice()+";;;");
 		System.out.println(cart2.getQuantity()+";;;");
-	}
-				
+	}			
 }
 }
-
