@@ -1,9 +1,6 @@
 package com.tyagi.EcommerceBackend.model;
 
 import javax.persistence.Entity;
-
-
-
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -28,7 +25,6 @@ String address;
 int mobile;
 
 public UserRegister() {
-
 	System.out.println("User register....");
 }
 
