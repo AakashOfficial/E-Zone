@@ -18,6 +18,7 @@ public UserDAO(SessionFactory sessionFactory)
 {
 	this.sessionFactory=sessionFactory;
 }
+	
 @Transactional
 public void insertUpdateUser(UserRegister user)
 {
@@ -32,6 +33,7 @@ public UserRegister getUser(int userid)
 	session.close();
 	return user;
 }
+	
 @Transactional
 public void deleteUser(UserRegister user)
 {
@@ -46,6 +48,5 @@ public List<UserRegister> getUserDetails()
 	session.close();
 	return list;
 }
-
 
 }
