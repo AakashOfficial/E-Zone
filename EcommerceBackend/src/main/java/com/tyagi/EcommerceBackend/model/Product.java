@@ -11,6 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Entity
 @Table
 public class Product {
+	
 	@Id
 	@GeneratedValue
 	int prodid;
