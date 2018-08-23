@@ -19,6 +19,7 @@ import com.tyagi.EcommerceBackend.model.Supplier;
 	{
 		this.sessionFactory=sessionFactory;
 	}
+		
 	@Transactional
 	public void insertUpdateSupplier(Supplier supplier)
 	{
@@ -33,6 +34,7 @@ import com.tyagi.EcommerceBackend.model.Supplier;
 		session.close();
 		return supplier;
 	}
+		
 	@Transactional
 	public void deleteSupplier(Supplier supplier)
 	{
@@ -48,6 +50,4 @@ import com.tyagi.EcommerceBackend.model.Supplier;
 		return list;
 	}
 
-
-
-	}
+}
