@@ -20,11 +20,13 @@ public CartDAO(SessionFactory sessionFactory)
 	this.sessionFactory=sessionFactory;
 	
 }
+	
 @Transactional
 public void addToCart(Cart cartitem)
 {
 	sessionFactory.getCurrentSession().saveOrUpdate(cartitem);
 }
+	
 public List<Cart> getCartItems(String username)
 {
 	Session session=sessionFactory.openSession();
@@ -34,6 +36,7 @@ public List<Cart> getCartItems(String username)
 	List<Cart> list=query.list();
 	return list;
 }
+	
 @Transactional
 public void deleteCartItem(Cart cart)
 {
