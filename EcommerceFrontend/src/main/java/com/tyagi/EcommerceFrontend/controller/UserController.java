@@ -59,8 +59,7 @@ public class UserController {
 			}
 			System.out.println("Login Successfull");
 		}
-		return page;
-		
+		return page;	
 	}
 
 	@RequestMapping(value ="/InsertUserRegister",method=RequestMethod.POST)
@@ -74,8 +73,6 @@ public class UserController {
 		return "Login";
 	}
 	
-	
-	
 	 @RequestMapping("/perform_logout")
 	    public class SignOutController {
 
@@ -85,6 +82,7 @@ public class UserController {
 	        return "Home";
 	      }
 	    }
+	
 	 @RequestMapping("/LoginFailure")
 		public String showLoginFailure()
 		{
