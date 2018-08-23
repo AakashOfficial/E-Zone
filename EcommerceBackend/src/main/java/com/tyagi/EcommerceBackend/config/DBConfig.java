@@ -28,7 +28,6 @@ import com.tyagi.EcommerceBackend.model.UserRegister;
 @EnableTransactionManagement
 public class DBConfig 
 {
-
 	@Bean(name = "dataSource")
 	public DataSource getH2DataSource() 
 	{
@@ -41,7 +40,6 @@ public class DBConfig
 		System.out.println("Data Source Creation");
 		return dataSource;
 	}
-
 	
 	@Autowired
 	@Bean(name="sessionFactory")
@@ -82,6 +80,7 @@ public class DBConfig
 		System.out.println("--Transaction manager Object Created--");
 		return transactionManager;
 	}
+	
 	@Autowired
 	@Bean(name="categoryDAO")
 	public CategoryDAO getCategoryDAO(SessionFactory sessionFactory)
@@ -89,6 +88,7 @@ public class DBConfig
 		System.out.println("-- CategoryDAO Object Creation--");
 		return new CategoryDAO(sessionFactory);
 	}
+	
 	@Autowired
 	@Bean(name="productDAO")
 	public ProductDAO getProductDAO(SessionFactory sessionFactory)
@@ -96,6 +96,7 @@ public class DBConfig
 		System.out.println("-- SupplierDAO Object Creation--");
 		return new ProductDAO(sessionFactory);
 	}
+	
 	@Autowired
 	@Bean(name="supplierDAO")
 	public SupplierDAO getSupplierDAO(SessionFactory sessionFactory)
@@ -103,6 +104,7 @@ public class DBConfig
 		System.out.println("-- SupplierDAO Object Creation--");
 		return new SupplierDAO(sessionFactory);
 	}
+	
 	@Autowired
 	@Bean(name="userDAO")
 	public UserDAO getUserDAO(SessionFactory sessionFactory)
@@ -110,6 +112,7 @@ public class DBConfig
 		System.out.println("-- UserDAO Object Creation--");
 		return new UserDAO(sessionFactory);
 	}
+	
 	@Autowired
 	@Bean(name="cartDAO")
 	public CartDAO getCartDAO(SessionFactory sessionFactory)
@@ -117,5 +120,4 @@ public class DBConfig
 		System.out.println("-- CartDAO Object Creation--");
 		return new CartDAO(sessionFactory);
 	}
-	
 }
