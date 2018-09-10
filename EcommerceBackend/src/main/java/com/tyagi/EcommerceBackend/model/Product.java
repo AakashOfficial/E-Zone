@@ -84,5 +84,5 @@ public class Product {
 	public void setProddesc(String proddesc) {
 		this.proddesc = proddesc;
 	}
-
 }
+
