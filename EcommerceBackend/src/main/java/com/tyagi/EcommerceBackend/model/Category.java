@@ -9,6 +9,7 @@ import javax.persistence.Table;
 @Table
 public class Category
 {
+	
 @Id
 @GeneratedValue
 int catid;
@@ -38,4 +39,3 @@ public void setCatdesc(String catdesc) {
 	this.catdesc = catdesc;
 }
 }
-
