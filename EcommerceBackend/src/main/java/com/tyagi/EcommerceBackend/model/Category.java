@@ -38,3 +38,4 @@ public void setCatdesc(String catdesc) {
 	this.catdesc = catdesc;
 }
 }
+
