@@ -18,6 +18,7 @@ public class Product {
 	int catid, suppid, quantity, price;
 	String prodname;
 	String proddesc;
+	
 	@Transient
 	MultipartFile pimage;
 
@@ -85,4 +86,3 @@ public class Product {
 		this.proddesc = proddesc;
 	}
 }
-
