@@ -9,11 +9,12 @@ import javax.persistence.Table;
 @Table
 public class Cart
 {
+	
 @Id
 @GeneratedValue
 int citemid;
-int cartid,prodid,quantity,price;
-String username,prodname,status;
+int cartid, prodid, quantity, price;
+String username, prodname, status;
 	
 public int getCitemid() {
 	return citemid;
@@ -79,4 +80,3 @@ public void setStatus(String status) {
 	this.status = status;
 }	
 }
-
