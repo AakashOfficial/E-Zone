@@ -9,19 +9,13 @@ import javax.persistence.Table;
 @Table
 public class UserRegister
 {
+	
 @Id
 @GeneratedValue
 int userid;
-
-
-String username;
-String password;
-String customername;
-String role;
+	
+String username, password, customername, role, email, gender, address;
 boolean enabled=true;
-String email;
-String gender;
-String address;
 int mobile;
 
 public UserRegister() {
@@ -99,5 +93,5 @@ public int getMobile() {
 public void setMobile(int mobile) {
 	this.mobile = mobile;
 }
+	
 }
-
