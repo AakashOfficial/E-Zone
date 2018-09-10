@@ -9,6 +9,7 @@ import javax.persistence.Table;
 @Table
 public class Supplier
 {
+	
 @Id
 @GeneratedValue
 int suppid;
@@ -38,4 +39,3 @@ public void setSuppaddress(String suppaddress) {
 	this.suppaddress = suppaddress;
 }
 }
-
