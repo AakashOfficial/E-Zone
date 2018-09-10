@@ -75,9 +75,9 @@ public class DBConfig
 	@Bean(name="transactionManager")
 	public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory)
 	{
-		System.out.println("--Transaction manager Object Creation--");
+		System.out.println("--Transaction manager Object Creation --");
 		HibernateTransactionManager transactionManager=new HibernateTransactionManager(sessionFactory);
-		System.out.println("--Transaction manager Object Created--");
+		System.out.println("--Transaction manager Object Created --");
 		return transactionManager;
 	}
 	
@@ -85,7 +85,7 @@ public class DBConfig
 	@Bean(name="categoryDAO")
 	public CategoryDAO getCategoryDAO(SessionFactory sessionFactory)
 	{
-		System.out.println("-- CategoryDAO Object Creation--");
+		System.out.println("-- CategoryDAO Object Creation --");
 		return new CategoryDAO(sessionFactory);
 	}
 	
@@ -93,7 +93,7 @@ public class DBConfig
 	@Bean(name="productDAO")
 	public ProductDAO getProductDAO(SessionFactory sessionFactory)
 	{
-		System.out.println("-- SupplierDAO Object Creation--");
+		System.out.println("-- SupplierDAO Object Creation --");
 		return new ProductDAO(sessionFactory);
 	}
 	
@@ -101,7 +101,7 @@ public class DBConfig
 	@Bean(name="supplierDAO")
 	public SupplierDAO getSupplierDAO(SessionFactory sessionFactory)
 	{
-		System.out.println("-- SupplierDAO Object Creation--");
+		System.out.println("-- SupplierDAO Object Creation --");
 		return new SupplierDAO(sessionFactory);
 	}
 	
@@ -109,7 +109,7 @@ public class DBConfig
 	@Bean(name="userDAO")
 	public UserDAO getUserDAO(SessionFactory sessionFactory)
 	{
-		System.out.println("-- UserDAO Object Creation--");
+		System.out.println("-- UserDAO Object Creation --");
 		return new UserDAO(sessionFactory);
 	}
 	
@@ -117,8 +117,7 @@ public class DBConfig
 	@Bean(name="cartDAO")
 	public CartDAO getCartDAO(SessionFactory sessionFactory)
 	{
-		System.out.println("-- CartDAO Object Creation--");
+		System.out.println("-- CartDAO Object Creation --");
 		return new CartDAO(sessionFactory);
 	}
 }
-
