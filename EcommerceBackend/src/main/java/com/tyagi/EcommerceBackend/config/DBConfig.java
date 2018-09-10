@@ -121,4 +121,3 @@ public class DBConfig
 		return new CartDAO(sessionFactory);
 	}
 }
-
