@@ -75,9 +75,9 @@ public class DBConfig
 	@Bean(name="transactionManager")
 	public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory)
 	{
-		System.out.println("--Transaction manager Object Creation --");
+		System.out.println("-- Transaction manager Object Creation --");
 		HibernateTransactionManager transactionManager=new HibernateTransactionManager(sessionFactory);
-		System.out.println("--Transaction manager Object Created --");
+		System.out.println("-- Transaction manager Object Created --");
 		return transactionManager;
 	}
 	
