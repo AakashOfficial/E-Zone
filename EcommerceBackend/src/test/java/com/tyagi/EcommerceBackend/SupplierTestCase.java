@@ -46,5 +46,5 @@ public class SupplierTestCase {
 			supplierDAO.insertUpdateSupplier(supplier);
 			System.out.println("The Supplier Updated");*/
 	       }
+	
 }
-
