@@ -50,3 +50,4 @@ public List<UserRegister> getUserDetails()
 }
 
 }
+
