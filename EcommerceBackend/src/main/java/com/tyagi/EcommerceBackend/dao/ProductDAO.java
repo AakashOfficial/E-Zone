@@ -52,4 +52,3 @@ public List<Product> getProductDetails()
 }
 
 }
-
