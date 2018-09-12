@@ -56,5 +56,5 @@ public void updateCartItem(Cart cart)
 {
 	sessionFactory.getCurrentSession().update(cart);
 }
+	
 }
-
