@@ -12,6 +12,7 @@ import com.tyagi.EcommerceBackend.model.UserRegister;
 @Repository("UserDAO")
 public class UserDAO 
 {
+	
 @Autowired
 SessionFactory sessionFactory;
 public UserDAO(SessionFactory sessionFactory)
@@ -50,4 +51,3 @@ public List<UserRegister> getUserDetails()
 }
 
 }
-
