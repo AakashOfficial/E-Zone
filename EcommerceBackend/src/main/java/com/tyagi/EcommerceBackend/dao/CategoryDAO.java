@@ -44,6 +44,4 @@ public class CategoryDAO{
 	    session.close();
 	    return list;
     }
-
 }
-
