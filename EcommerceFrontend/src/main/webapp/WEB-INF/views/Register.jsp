@@ -68,15 +68,18 @@ input::-webkit-input-placeholder {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 
 }
+	    
 .form-control {
     height: auto!important;
 padding: 8px 12px !important;
 }
+	    
 .input-group {
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
 }
+	    
 #button {
     border: 1px solid #ccc;
     margin-top: 28px;
@@ -99,6 +102,7 @@ padding: 8px 12px !important;
     background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
 }
+	    
 .main-center{
  	margin-top: 30px;
  	margin: 0 auto;
@@ -112,6 +116,7 @@ padding: 8px 12px !important;
 box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 
 }
+	    
 span.input-group-addon i {
     color: #009edf;
     font-size: 17px;
@@ -243,4 +248,3 @@ span.input-group-addon i {
     <%@include file="Footer.jsp" %>
 	</body>
 </html>
-
