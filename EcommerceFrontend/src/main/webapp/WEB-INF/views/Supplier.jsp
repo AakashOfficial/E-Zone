@@ -131,8 +131,6 @@ offSetManager();
 				<td><h4><b>Supplier Name</b></h4></td>
 				<td><form:input path="suppname" /></td>
 			</tr>
-			
-			
 				<td><h4><b>Supplier Address</b></h4></td>
 				<td><form:textarea path="suppaddress" /></td>
 			</tr>
@@ -168,4 +166,3 @@ offSetManager();
   <%@include file="Footer.jsp" %>
 </body>
 </html>
-
