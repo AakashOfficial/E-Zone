@@ -7,7 +7,6 @@
 </head>
 <body>
     
-
       <!-- Fixed navbar -->
         <nav id="header" class="navbar navbar-fixed-top">
             <div id="header-container" class="container navbar-container">
@@ -71,7 +70,6 @@ var myNavBar = {
         }
         this.flagAdd = true;
     }
-
 };
 
 /**
@@ -131,10 +129,10 @@ offSetManager();
 				<td><h4><b>Supplier Name</b></h4></td>
 				<td><form:input path="suppname" /></td>
 			</tr>
+	                <tr>
 				<td><h4><b>Supplier Address</b></h4></td>
 				<td><form:textarea path="suppaddress" /></td>
 			</tr>
-			
 			<tr>
 			<td colspan="2"><input type="submit" /></td>
 			</tr>
@@ -148,8 +146,7 @@ offSetManager();
 		<td>Supplier ID</td>
 		<td>Supplier Name</td>
 		<td>Supplier Address</td>
-		<td>Operations</td>
-		
+		<td>Operations</td>	
 	</tr>
 	<c:forEach items="${supplist}" var="supplier">
 		<tr bgcolor="#00ff99">
@@ -162,8 +159,8 @@ offSetManager();
 		</tr>
 	</c:forEach>
 </table>
+
 <!-- Completed Displaying Table -->
   <%@include file="Footer.jsp" %>
 </body>
 </html>
-
