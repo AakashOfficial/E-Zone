@@ -35,4 +35,3 @@ Quantity <input type="text" name="quantity" class="form-control btn-block"/>
 </tr>
 </table>
 <%@include file="Footer.jsp"%>
-
