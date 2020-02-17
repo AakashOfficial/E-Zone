@@ -1,12 +1,3 @@
 # Ecommerce
 
 Project Complete.
-
-
-
-
-
-
-
-
-
